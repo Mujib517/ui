@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+<!-- audio,video,input, select,optgroup -->
 <body>
   <h1>Contact Page</h1>
+
+  <div>
+    <label for="txtFName">First Name</label>
+    <input id="txtFName" type="text" placeholder="First Name" name="firstName" />
+  </div>
+  <br>
+  <!-- 123  124 -->
+  <div>
+    <label for="txtLName">LastName</label>
+    <input type="text" id="txtLName" placeholder="Last Name" name="lastName" />
+  </div>
+  <br/>
+  <div>
+    <label>Password</label>
+    <input type="password" placeholder="Password" />
+  </div>
+
+  <br>
+  <div>
+    Male:
+    <input type="radio" value="1" name="gender" /> Female:
+    <input type="radio" value="2" name="gender" checked/> Unspecified
+    <input type="radio" value="3" name="gender" />
+  </div>
+  <!-- active, inactive  0 1 -->
+
+  <div>
+    Admin?
+    <input type="checkbox" />
+  </div>
+
+  <br>
+  <div>
+    Language
+    <select name="language">
+      <option value="0">--select--</option>
+
+      <optgroup label="Strongly typed">
+        <option value="1">C#</option>
+        <option value="3">Java</option>
+      </optgroup>
+      <optgroup label="Loosely typed">
+        <option value="2">Java Script</option>
+        <option value="4">Python</option>
+      </optgroup>
+    </select>
+
+  </div>
+  <br>
+
+  <div>
+    <input type="color" />
+  </div>
+  <br/>
+  <div>
+    <input type="date" />
+  </div>
+  <br/>
+  <div>
+    Age:
+    <input type="number" min="0" max="100" step="5">
+  </div>
+  <br/>
+
+  <div>
+    Email
+    <input type="email" placeholder="Email" value="mujib517@gmail.com" name="mail" />
+  </div>
+
+  <br/>
+
+  <div>
+    Range
+    <input type="range" min="0" max="100" step="10"/>
+  </div>
+
+
+
 </body>
+
 </html>

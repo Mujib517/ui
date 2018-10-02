@@ -6,13 +6,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles2.css" />
+
+  <style>
+    body {
+      /* font-family: 'Times New Roman', Times, serif; */
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1em;
+     
+      /* font-family: 'Courier New', Courier, monospace; */
+    }
+
+    p {
+      color: red;
+      text-transform: capitalize;
+      padding: 20px;
+      border: 1px solid black;
+      text-indent: 25px;
+      letter-spacing: 3px;
+      line-height: 25px;
+      word-spacing: 10px;
+      white-space: space normal;
+      font-weight:lighter;
+      font-style:oblique;
+      font-variant:normal;
+    }
+
+    h1 {
+      text-shadow: 7px 5px rgba(55, 55, 55, 0.3);
+      text-decoration: line-through;
+    }
+
+    .strike-text {
+      text-decoration: line-through;
+    }
+
+    .box {
+      width: 100%;
+      height: 300px;
+    }
+
+    #div1 {
+      border: 3px solid red;
+      margin: auto;
+      /* padding-left:100px;
+      padding-right: 100px;
+      padding-top:100px;
+      padding-bottom:100px; */
+      /* padding:100px; */
+      padding: 100px 0 100px 0;
+    }
+
+    #div2 {
+      border-style: ridge;
+      border-width: 5px;
+      border-color: red;
+    }
+
+    #div3 {
+      border: 5px solid #555;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>About Page</h1>
+
+  <h1>My Cool Website</h1>
+  <p>
+    it is a long
+    <span class="strike-text">established</span> fact that a reader will be distracted by the readable content of a page when looking at its layout.
+    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+    here, content here', making it look like readable English. Many desktop publishing packages and web page editors now
+    use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and
+    the like)
+  </p>
+
+  <!-- <div id="title"></div> -->
+  <div class="box" id="div1"></div>
+  <div class="box" id="div2"></div>
+  <div class="box" id="div3"></div>
+
+
+  <!-- <h1 id="title">About Page</h1>
+  <h1 class="cls">Heading 2</h1>
+  <h1 class="cls">Heading 3</h1>
+  <h1 class="cls">Heading 4</h1>
+  <h1>Heading 5</h1> -->
   <!-- Zen coding -->
   <!-- Alt + Shift +F -->
-  <table border="1">
+  <!-- <table border="1">
     <thead>
       <tr>
         <th>Symbol Code</th>
@@ -69,7 +153,7 @@
         <td>&clubs;</td>
       </tr>
     </tbody>
-  </table>
+  </table> -->
 </body>
 
 </html>

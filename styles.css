@@ -1,0 +1,21 @@
+/* external */
+/* RGB Red Green Blue */
+.cls{
+  font-size: 20px;
+  /* #333  ==> 33 33 33 */
+  /* 0-255 rgb, alpha:0-1 */
+  background-color:hsla(120,50%,50%,0.5);
+  height: 10em;
+}
+#title{
+  /*background-color:red !important;
+   background-image:url("img/hf.jpeg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size: 150px 150px; */
+  height: 300px;
+  /* background-position:middle right; */
+  background:red url("img/hf.jpeg") no-repeat fixed;
+}
+
+/* Inline, internal, external */

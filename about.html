@@ -10,11 +10,16 @@
   <link rel="stylesheet" href="styles2.css" />
 
   <style>
+    @font-face {
+      src: url('font.ttf');
+      font-family: 'my custom font';
+    }
+
     body {
       /* font-family: 'Times New Roman', Times, serif; */
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1em;
-     
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.9em;
+
       /* font-family: 'Courier New', Courier, monospace; */
     }
 
@@ -28,14 +33,29 @@
       line-height: 25px;
       word-spacing: 10px;
       white-space: space normal;
-      font-weight:lighter;
-      font-style:oblique;
-      font-variant:normal;
+      font-weight: lighter;
+      font-style: oblique;
+      font-variant: normal;
+      position: relative;
+      z-index: 10;
     }
 
     h1 {
       text-shadow: 7px 5px rgba(55, 55, 55, 0.3);
-      text-decoration: line-through;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background-color: #333;
+      color: #fff;
+      opacity: 0.2;
+    }
+
+    h2 {
+      display: none;
+    }
+
+    li {
+      display: inline;
     }
 
     .strike-text {
@@ -43,36 +63,70 @@
     }
 
     .box {
-      width: 100%;
+      width: 200px;
       height: 300px;
     }
 
     #div1 {
       border: 3px solid red;
-      margin: auto;
       /* padding-left:100px;
       padding-right: 100px;
       padding-top:100px;
       padding-bottom:100px; */
       /* padding:100px; */
       padding: 100px 0 100px 0;
+      float: left;
     }
 
     #div2 {
       border-style: ridge;
       border-width: 5px;
       border-color: red;
+      float: left;
     }
 
     #div3 {
       border: 5px solid #555;
+      float: right;
     }
+
+
+
+    .block {
+      display: block;
+      color: red;
+      visibility: hidden;
+    }
+
+    .tbl {
+      width:100%;
+      border: 1px solid gray;
+      display: table;
+    }
+    .row{
+      display: table-row;
+    }
+
+    .col{
+      display: table-cell;
+      border:1px solid black;
+    }
+
+    /* footer {
+      position: sticky;
+      position: -webkit-sticky;
+      bottom: 0;
+      background-color: #555;
+      color: #fff;
+      height: 100px;
+    } */
   </style>
 </head>
 
 <body>
 
   <h1>My Cool Website</h1>
+  <h2>Heading 2</h2>
   <p>
     it is a long
     <span class="strike-text">established</span> fact that a reader will be distracted by the readable content of a page when looking at its layout.
@@ -154,6 +208,24 @@
       </tr>
     </tbody>
   </table> -->
+
+  <div class="tbl">
+    <div class="row">
+      <div class="col">Col 1</div>
+      <div class="col">Col 2</div>
+    </div>
+    <div class="row">
+      <div class="col">Data 1</div>
+      <div class="col">Data 2</div>
+    </div>
+  </div>
+
+
+
+
+  <footer>
+    &copy;2018 mywebsite.com
+  </footer>
 </body>
 
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <!-- Mobile First Development -->
+  <style>
+    .container {
+      border: 1px solid black;
+      height: 100px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .div {
+      width: 550px;
+      height: 100px;
+      border: 1px solid green;
+    }
+
+    #div1 {
+      background-color: red;
+      flex-shrink: 1;
+    }
+
+    #div2 {
+      background-color: green;
+      flex-shrink: 2;
+    }
+
+    #div3 {
+      background-color: blue;
+      flex-shrink: 3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="div" id="div1"></div>
+    <div class="div" id="div2"></div>
+    <div class="div" id="div3"></div>
+  </div>
+</body>
+
+</html>

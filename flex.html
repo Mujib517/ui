@@ -3,14 +3,20 @@
 
 <head>
   <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" />
   <style>
     body {
       margin: 0;
       padding: 0;
+      background: #fff url('img/bg.jpg') fixed;
+      background-size: cover;
     }
 
     header {
       background-color: #333;
+      position: sticky;
+      top: 0;
+      position: -webkit-sticky;
     }
 
     nav ul {
@@ -24,6 +30,7 @@
       flex: 1 0 0;
       text-align: center;
       justify-content: space-around;
+      color: #fff;
     }
 
     nav ul li:hover {
@@ -44,21 +51,75 @@
 
     table {
       width: 100%;
+      border-collapse: collapse;
     }
 
     thead th {
-
-      background-color: green;
+      background-color: #006495;
       color: #fff;
-
     }
 
     th,
     td {
-      border-bottom: 1px solid #666;
-      border-left: 1px solid #666;
+      border-bottom: 1px solid #ddd;
+      border-left: 1px solid #ddd;
       text-align: center;
-      padding: 5px;
+      padding: 8px;
+    }
+
+    tbody tr:hover {
+      background-color: #ddd;
+      cursor: pointer;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: aliceblue;
+    }
+
+    #title {
+      color: #fff;
+      font-size: 1.3em;
+    }
+
+    #test {
+      height: 1500px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      height: 50px;
+      color: #fff;
+      bottom: 0;
+      position: sticky;
+      position: -webkit-sticky;
+    }
+
+    .hero-section {
+      width: 100%;
+      height: 450px;
+      background: #fff url('img/bg2.jpeg');
+      background-size: cover;
+    }
+
+    .hero {
+      position: relative;
+    }
+
+    .hero h1 {
+      position: absolute;
+      top: 0;
+      color: #fff;
+    }
+
+    td img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .icons {
+      color: #fff;
     }
   </style>
 </head>
@@ -68,58 +129,97 @@
     <nav>
       <div class="container">
         <ul>
+          <li id="title">My Cool Website</li>
           <li>
+            <i class="fa fa-home"></i>
             <a href="index.html">Home</a>
           </li>
           <li>
+            <i class="fa fa-info"></i>
             <a href="about.html">About</a>
           </li>
           <li>
+            <i class="fa fa-mobile"></i>
             <a href="contact.html">Contact</a>
           </li>
           <li>
+            <i class="fa fa-facebook"></i>
             <a href="flex.html">Flex Demo</a>
+          </li>
+          <li class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-google"></i>
+            <i class="fa fa-linkedin"></i>
           </li>
         </ul>
       </div>
     </nav>
   </header>
- <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Year</th>
-        <th>Branch</th>
-        <th>Result</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Sheldon Cooper</td>
-        <td>2011</td>
-        <td>CSE</td>
-        <td>Pass</td>
-      </tr>
-      <tr>
-        <td>John Snow</td>
-        <td>2012</td>
-        <td>ECE</td>
-        <td>Fail</td>
-      </tr>
-      <tr>
-        <td>Penny</td>
-        <td>2016</td>
-        <td>EEE</td>
-        <td>Pass</td>
-      </tr>
-      <tr>
-        <td>Raj</td>
-        <td>2017</td>
-        <td>ECE</td>
-        <td>Pass</td>
-      </tr>
-    </tbody>
-  </table>
+  <main>
+    <div class="hero">
+      <div class="hero-section">
+
+      </div>
+      <h1>Welcome to my cool website</h1>
+    </div>
+
+    <br/>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Year</th>
+          <th>Branch</th>
+          <th>Result</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sheldon Cooper</td>
+          <td>2011</td>
+          <td>CSE</td>
+          <td>Pass</td>
+          <td>
+            <img src="img/hf.jpeg" />
+          </td>
+        </tr>
+        <tr>
+          <td>John Snow</td>
+          <td>2012</td>
+          <td>ECE</td>
+          <td>Fail</td>
+          <td>
+            <img src="img/hf.jpeg" />
+          </td>
+        </tr>
+        <tr>
+          <td>Penny</td>
+          <td>2016</td>
+          <td>EEE</td>
+          <td>Pass</td>
+          <td>
+            <img src="img/hf.jpeg" />
+          </td>
+        </tr>
+        <tr>
+          <td>Raj</td>
+          <td>2017</td>
+          <td>ECE</td>
+          <td>Pass</td>
+          <td>
+            <img src="img/hf.jpeg" />
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    &copy;2018 mycoolwebsite.com
+  </footer>
 
 </body>
 

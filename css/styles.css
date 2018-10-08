@@ -1,0 +1,135 @@
+
+    ::selection{
+      background-color:yellow;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      /* background: #fff url('img/bg.jpg') fixed;
+      background-size: cover; */
+    }
+
+    header {
+      background-color: #333;
+      top: 0;
+      position: sticky;
+      position: -webkit-sticky;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      padding: 12px;
+      flex: 1 0 0;
+      text-align: center;
+      justify-content: space-around;
+      color: #fff;
+    }
+
+    nav ul li:hover {
+      background-color: #555;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #title {
+      font-size: 13pt;
+      font-weight: bolder;
+      color: #fff;
+      flex-basis: 180px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead th {
+      background-color: #006495;
+      color: #fff;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      text-align: center;
+      padding: 8px;
+    }
+
+    tbody tr:hover {
+      background-color: #ddd;
+      cursor: pointer;
+    }
+
+    /* tbody tr:first-child {
+      background-color: aliceblue;
+    } */
+    tbody tr:nth-child(3n-1) {
+      background-color: red;
+    }
+
+    #title {
+      color: #fff;
+      font-size: 1.3em;
+    }
+
+    #test {
+      height: 1500px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      height: 50px;
+      color: #fff;
+      bottom: 0;
+      position: sticky;
+      position: -webkit-sticky;
+    }
+
+    .hero-section {
+      width: 100%;
+      height: 450px;
+      background: #fff url('../img/bg2.jpeg'); 
+      /* css/img/bg2.jpeg */
+      background-size: cover;
+    }
+
+    .hero {
+      position: relative;
+    }
+
+    .hero h1 {
+      position: absolute;
+      top: 0;
+      color: #fff;
+    }
+
+    td img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .icons {
+      color: #fff;
+    }
+
+    @media screen and (max-width:768px){
+      nav ul{
+        display:block;
+      }
+
+      .hero{
+        display: none;
+      }
+    }

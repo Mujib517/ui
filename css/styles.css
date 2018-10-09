@@ -70,6 +70,11 @@
       cursor: pointer;
     }
 
+    tbody>tr{
+      font-weight: bolder;
+      color:red;
+    }
+
     /* tbody tr:first-child {
       background-color: aliceblue;
     } */
@@ -124,7 +129,16 @@
       color: #fff;
     }
 
+    .hero-mobile{
+      text-align: center;
+      display: none;
+    }
+
     @media screen and (max-width:768px){
+      .hero-mobile{
+        display: block;
+      }
+
       nav ul{
         display:block;
       }
@@ -133,3 +147,5 @@
         display: none;
       }
     }
+
+    /* tag, id, class */

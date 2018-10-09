@@ -73,7 +73,7 @@
       to {
         width: 300px;
         height: 300px;
-        transform:scale(1.2) rotateX(180deg) rotateY(180deg) rotateZ(180deg) skewX(90deg);
+        transform: scale(1.2) rotateX(180deg) rotateY(180deg) rotateZ(180deg) skewX(90deg);
       }
     }
 
@@ -103,19 +103,48 @@
       /* animation-direction: alternate-reverse; */
       animation-timing-function: ease-out;
     }
+
+    div[class|="box"] {
+      color: red;
+    }
+
+
+    /* .box~div {
+      color: yellow;
+      border: 1px solid red;
+    } */
   </style>
 </head>
 
 <body>
   <h1>Contact Us</h1>
 
+  <div class="box box2" >
+    This is my Div
+  </div>
+
+  <div class="3box">
+    This is my Div
+  </div>
+
   <div class="box">
     This is my Div
   </div>
 
+  <div class="box3">
+    This is another box2
+  </div>
+
+
+  <div class="box2">
+    This is another box
+  </div>
+
+
 
 
   <div>
+    <label>First Name</label>
     <input class="cls" type="text" placeholder="First Name" required />
   </div>
 

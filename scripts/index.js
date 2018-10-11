@@ -55,3 +55,74 @@
 
 // console.log(typeof obj); 
 // console.log(typeof fun); 
+//function expression function declaration
+// not compiled --> intermediate outcome
+// java --> .class --> output
+// javascript --> output
+// C# --> .exe --> output
+// hoisting
+// void
+// method function
+// no void method
+// Operators +,-,*,/,%, ++, --
+// conditonal stmts if,else, switch, ternary 
+// truthy falsy
+
+var isYoung = {};
+
+if (isYoung) {  // 0, undefined, null, "", false, NaN
+  console.log("If block");
+}
+else {
+  console.log("Else block");
+}
+
+
+// var isYoung;
+// var age = 30; //assignment
+
+// isYoung = age <= 35 ? true : false;
+
+
+// if (age <= 35) {
+//   isYoung = true;
+// }
+// else {
+//   isYoung = false;
+// }
+
+// console.log("you are young", isYoung == true ? "Yes" : "No");
+
+
+
+
+
+
+// if (age == 10) { //comparision
+//   console.log("You are kid");
+// }
+// else if (age == 20) {
+//   console.log("You are young");
+// }
+// else if (age == 30) {
+//   console.log("You are still young");
+// }
+// else {
+//   console.log("You rock");
+// }
+
+
+// switch (age) {
+//   case 10:
+//     console.log("You are kid");
+//     break;
+//   case 20:
+//     console.log("You are young");
+//     break;
+//   case 30:
+//     console.log("You are still young");
+//     break;
+//   default:
+//     console.log("You rock");
+//     break;
+// }

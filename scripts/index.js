@@ -1,16 +1,37 @@
-// constructor function
-// Pascal casing
-function Mobile(color) {
-  this.width = 5;
-  this.height = 10;
-  this.color = color;
 
-  this.call = function (number) {
-    console.log("Calling", number);
+
+//IIFE Immediately invoked function expression
+(function(){
+  function add() {
+    console.log('adding...');
   }
-}
 
-var m1 = new Mobile("Red");
-var m2 = new Mobile("Black");
-var m3 = new Mobile("Blue");
+  add();
+})();
 
+
+
+
+// //:function, =, value:function(){}, 
+// class BaseMobile {
+//   text() {
+//     console.log("sending...");
+//   }
+// }
+
+
+// class Mobile extends BaseMobile {
+
+//   constructor() {
+//     super();
+//     this.width = 10;
+//     console.log("Constructor is called");
+//   }
+
+//   call() {
+//     console.log("Calling...");
+//   }
+// }
+
+// var m1=new Mobile();
+// m1.text();

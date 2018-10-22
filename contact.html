@@ -116,10 +116,10 @@
   </style>
 </head>
 
-<body>
+<body onload="load()">
   <h1>Contact Us</h1>
 
-  <div class="box box2" >
+  <!-- <div class="box box2" >
     This is my Div
   </div>
 
@@ -138,22 +138,29 @@
 
   <div class="box2">
     This is another box
+  </div> -->
+
+
+  <div id="msgs">
+
   </div>
 
 
-
-
   <div>
-    <label>First Name</label>
-    <input class="cls" type="text" placeholder="First Name" required />
+    <input id="txtFName" class="cls" type="text" placeholder="First Name" required onblur="test()" />
   </div>
 
   <div>
-    <input class="cls" type="text" placeholder="Last Name" pattern="[0-9]{3}" />
+    <input type="text" placeholder="Age" onkeyup="onPress(event)" />
+  </div>
+
+
+  <div>
+    <input id="txtLName" class="cls" type="text" placeholder="Last Name" pattern="[0-9]{3}" />
   </div>
 
   <div>
-    <select>
+    <select onchange="onSelect()">
       <option>C#</option>
       <option>JavaScript</option>
       <option>Typescript</option>
@@ -163,8 +170,60 @@
 
   <div>
     <!-- <button>Save</button> -->
-    <input class="button" type="button" value="Save" />
+    <input class="button" type="button" value="Save" id="btnSave" />
   </div>
+
+  <script>
+    function onPress(evt) {
+      //0-9
+      console.log(evt.keyCode);
+      if (evt.keyCode === 8) return;
+      if (!(evt.keyCode >= 48 && evt.keyCode <= 57)) {
+        alert("invalid age");
+      }
+    }
+
+    function onSelect() {
+      console.log("value changed");
+    }
+
+    function test() {
+      alert("Lost focus");
+    }
+
+    function load() {
+
+      document.getElementById('btnSave').addEventListener('click', save);
+
+      var elems = document.getElementsByClassName('cls');
+      var elems2 = document.getElementsByTagName("div");
+
+      console.log(elems2);
+      var count = 0;
+
+      function save() {
+
+        var msgs = document.getElementById('msgs');
+
+        var div = document.createElement('div');
+        div.innerHTML = "<h3>" + (count++) + "</h3>";
+
+        msgs.appendChild(div);
+
+        // var txt = document.getElementById('txtFName');
+        // var txtLName = document.getElementById('txtLName');
+
+        // if (!txt.value || !txtLName.value) {
+        //   alert("Please fill all the fields");
+        // }
+        // else {
+        //   alert("Successfully saved");
+        // }
+      }
+    }
+
+
+  </script>
 </body>
 
 </html>

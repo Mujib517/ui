@@ -1,31 +1,30 @@
 //token
 // trust
+// async await
 
 function addAsync(a, b) {
   a++;
   b++;
   console.log('execution started');
-  return new Promise(function (resolve, reject) {
+  var prms = new Promise(function (resolve, reject) {
     if (a > 0) {
       setTimeout(function () {
         var c = a + b;
         console.log('calc completed');
-        resolve(c);
+        reject("Failed to calculate");
       }, 2000);
     }
     else reject("Invalid data");
 
   });
+
+  return prms;
 }
 
-var prms = addAsync(10, 20)
-  .then(function () {
-    console.log("Successs");
-  });
 
-addAsync(-10, 100).then().catch(function (err) {
-  console.log(err);
-})
+// addAsync(20, 30)
+//   .then(function (res) { console.log(res); }, function (err) { console.log(err); });
 
-
-
+// addAsync(20,30)
+// .then(function(){})
+// .catch(function(){})

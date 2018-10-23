@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- CDN -->
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <style>
     input[type="text"] {
       padding: 5px;
@@ -174,54 +176,10 @@
   </div>
 
   <script>
-    function onPress(evt) {
-      //0-9
-      console.log(evt.keyCode);
-      if (evt.keyCode === 8) return;
-      if (!(evt.keyCode >= 48 && evt.keyCode <= 57)) {
-        alert("invalid age");
-      }
-    }
-
-    function onSelect() {
-      console.log("value changed");
-    }
-
-    function test() {
-      alert("Lost focus");
-    }
-
-    function load() {
-
-      document.getElementById('btnSave').addEventListener('click', save);
-
-      var elems = document.getElementsByClassName('cls');
-      var elems2 = document.getElementsByTagName("div");
-
-      console.log(elems2);
-      var count = 0;
-
-      function save() {
-
-        var msgs = document.getElementById('msgs');
-
-        var div = document.createElement('div');
-        div.innerHTML = "<h3>" + (count++) + "</h3>";
-
-        msgs.appendChild(div);
-
-        // var txt = document.getElementById('txtFName');
-        // var txtLName = document.getElementById('txtLName');
-
-        // if (!txt.value || !txtLName.value) {
-        //   alert("Please fill all the fields");
-        // }
-        // else {
-        //   alert("Successfully saved");
-        // }
-      }
-    }
-
+    // Id,tag, class
+    $('#btnSave').click(function () {
+      $('#txtFName').animate({ width: 150, height: 100, opacity: 0.5 });
+    });
 
   </script>
 </body>
